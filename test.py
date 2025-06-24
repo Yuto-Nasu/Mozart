@@ -9,10 +9,7 @@ def lagrange_polynomial(points):
     y = np.zeros(len(x))
     # ラグランジュ補間式に従って x から y を計算する
     # なお、標本点の x_n は points[n][0], y_n は points[n][1] としてとれる
-    # 
-    # 
-    # （自分で書く）
-    #make l
+
     
     lBunshi = np.ones((len(x),len(points)))
     lBunbo  = np.ones(len(points))
