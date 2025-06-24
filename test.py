@@ -7,8 +7,7 @@ def lagrange_polynomial(points):
     x = np.arange(0, 731, 0.1)
     # y を x と同じ大きさのゼロの配列として初期化しておく
     y = np.zeros(len(x))
-    # ラグランジュ補間式に従って x から y を計算する
-    # なお、標本点の x_n は points[n][0], y_n は points[n][1] としてとれる
+
 
     
     lBunshi = np.ones((len(x),len(points)))
