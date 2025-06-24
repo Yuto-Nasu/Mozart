@@ -159,7 +159,6 @@ eigenvectors = eigenvectors[:, idx]
 #print("固有ベクトル：\n",eigenvectors)
 
 
-
 #主成分を求める
 projectedData = (Data)@eigenvectors
 sumOfEVals = np.sum(eigenvalues)
