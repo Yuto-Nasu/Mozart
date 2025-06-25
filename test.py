@@ -30,7 +30,7 @@ def lagrange_polynomial(points):
     for i in range(0,len(y)):
         for j in range(0,len(points)):
             y[i] += (lBunshi[i][j]*points[j][1]/lBunbo[j])
-    print()
+
     # 
 
     return(x, y)
@@ -47,11 +47,6 @@ def spline(points):
     # (4n, 4n) の係数行列を確保。デフォルト値を 0 で埋める
     A = np.zeros((4 * n, 4 * n))
     b = np.zeros(4 * n)
-    # スプライン補間の条件に従い、標本点リストから計算して上記の A, b に値を埋めていく。
-    #
-    #
-    # （自分で書く）
-
     A[2][0] = 6*points[0][0]
     A[2][1] = 2
     A[3][4*n - 4] = 6*points[n][0]
@@ -151,7 +146,7 @@ eigenvalues = eigenvalues[idx]
 eigenvectors = eigenvectors[:, idx]
 
 
-#print("固有値：",eigenvalues)
+#print("固有値：",eigenvalues) chimpo
 #print("固有ベクトル：\n",eigenvectors)
 
 
